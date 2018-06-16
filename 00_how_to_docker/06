@@ -1,0 +1,5 @@
+#docker run : run a container, it will pull it form the hub if its not in the local images. It will also create the image after it has pulled it
+# -d : will remove the container when it exist or when the daemon exits
+# -name : gives a specific name to the container
+# -p expose ports format : ip:hostPort:containerPort | ip::containerPort | hostPort:containerPort | containerPort
+docker run -d --restart always --name overlord -p 5000:80 nginx

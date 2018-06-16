@@ -1,0 +1,4 @@
+# eval will add the ENV variables to the terminal
+# those variablest are accessible through the command within the parenthesis
+eval $(docker-machine env "Char")
+#this file needs to be runned with source and not sh or ./ because it cannot be forked.

@@ -1,0 +1,16 @@
+apt-get update
+apt-get upgrade
+apt-get install gcc
+apt-get install git
+mkdir myrepo
+cd myrepo
+git init
+printf "#include <unistd.h> \n int main(){write(1,\"compile\\\n\",8); return (1);}" > main.c
+gcc main.c
+./a.out
+git config --global user.email "charlottevermandel@gmail.com"
+git config --global user.name "bidoubiwa"
+git add main.c
+git commit -m "main added"
+git remote add origin https://github.com/bidoubiwa/docker_repo_42.git
+git push -u origin master

@@ -1,0 +1,4 @@
+#inspect gives back a json with full information on de Container
+#--format lets you format the output to only have the information needed
+#In our case the IP address in child of NetworkSettings in the json file
+docker inspect --format="{{.NetworkSettings.IPAddress}}" overlord

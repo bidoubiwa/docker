@@ -1,0 +1,2 @@
+#run and pull container from hub if image doesnt exist locally
+docker run hello-world

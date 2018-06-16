@@ -1,0 +1,2 @@
+#like docker image or docker container, docker volume is specific for volumes
+docker volume ls

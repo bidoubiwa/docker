@@ -1,0 +1,2 @@
+# exec executes a cmc inside the given container. : exec [CONTAINER] [COMMAND TO EXECUTE]
+docker exec spawning-pool env

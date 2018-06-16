@@ -1,0 +1,2 @@
+#Volume keep data used by containers. In order to backup or to save important information (eg databases)
+docker volume create hatchery

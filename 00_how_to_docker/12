@@ -1,0 +1,12 @@
+# To attach a volume to a container you can either add -v or --mount. Both ask the same information but in a differen way
+# --mount being more verboze we will be using that. 
+# --mounts need the following information : 
+# - type=volume/bind/tmpfs (we will take volume since its a volume)
+# - source=hatchery
+# - targer = /var/lib/mysql
+# - optionnal : readonly or volume-opt (list key value of options)
+# If your create a container with a volume that doesnt exist yet docker created the volume for you
+#docker exec -it spawning-pool mysql -uroot -pKerrigan  to connect to db container
+docker run --name spawning-pool --restart on-failure -e MYSQL_ROOT_PASSWORD=Kerrigan -e MYSQL_DATABASE=zerglings -d \
+	--mount source=Hatchery,target=/var/lib/mysql \
+	mysql

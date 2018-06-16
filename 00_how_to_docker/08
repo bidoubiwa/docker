@@ -1,0 +1,5 @@
+# -i keep STDIN open even if not attached
+#-t allocate a pseudo -tty
+#--rm will remove the container after it exits
+#alpine is a really light Linux
+docker run --rm -it alpine
