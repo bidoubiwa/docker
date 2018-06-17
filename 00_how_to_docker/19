@@ -1,0 +1,4 @@
+#docker run -dit --name Abatthur -p 3000:3000 --mount type=bind,source=/root,target=/test python:2-slim bin/sh -c "echo 'coucou'"
+docker run -dt --name Abathur -p 3000:3000 -v ~/Abathur:/root -w /root python:2-slim
+
+#"pip install Flask && FLASH_APP=hello.py flask run --host 0.0.0.0 --port 3000"
