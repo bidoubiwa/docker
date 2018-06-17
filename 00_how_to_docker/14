@@ -1,0 +1,2 @@
+#link is used to link our wordpress with the mysql container
+docker run --name lair --link spawning-pool:mysql -p 8080:80 -d wordpress

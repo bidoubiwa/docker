@@ -7,6 +7,6 @@
 # - optionnal : readonly or volume-opt (list key value of options)
 # If your create a container with a volume that doesnt exist yet docker created the volume for you
 #docker exec -it spawning-pool mysql -uroot -pKerrigan  to connect to db container
-docker run --name spawning-pool --restart on-failure -e MYSQL_ROOT_PASSWORD=Kerrigan -e MYSQL_DATABASE=zerglings -d \
-	--mount source=Hatchery,target=/var/lib/mysql \
-	mysql
+docker run --name spawning-pool --restart on-failure -e MYSQL_ROOT_PASSWORD=Kerrigan -e MYSQL_DATABASE=zerlings -d \
+	-v hatchery:/var/lib/mysql \
+	mysql:5.7.22
