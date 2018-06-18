@@ -1,0 +1,1 @@
+docker service create --name marines --network overmind --replicas 2 --env OC_USERNAME=plif --env OC_PASSWD=plouf 42school/marine-squad
