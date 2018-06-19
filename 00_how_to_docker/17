@@ -1,1 +1,1 @@
-docker ps
+docker-machine ssh Char docker ps
